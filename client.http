@@ -1,0 +1,51 @@
+POST http://localhost:3333/users
+Content-Type: application/json
+
+{
+  "name": "Thiago Pereira",
+  "email": "thiagoss@example.com"
+}
+
+###
+
+GET http://localhost:3333/users
+
+###
+
+POST http://localhost:3333/meals
+Content-Type: application/json
+
+{
+  "name": "Sanduíche",
+  "description": "Sanduíche de pão integral com atum e salada de alface e tomate",
+  "isOnDiet": true,
+  "date": "2024-03-24T12:00:00Z"
+}
+
+###
+
+GET http://localhost:3333/meals
+
+###
+
+GET http://localhost:3333/meals/ef1b5fb6-8bec-4b83-a348-88a5a9411f0c
+
+###
+
+PUT http://localhost:3333/meals/6dc75028-1d7a-468b-971d-7435fb225782
+Content-Type: application/json
+
+{
+  "name": "X-Tudo",
+  "description": "Xis completo da lancheria do bairro",
+  "isOnDiet": false,
+  "date": "12/08/2022"
+}
+
+###
+
+DELETE http://localhost:3333/meals/069c54ca-8b94-40ea-b93d-a9542450f2d4
+
+###
+
+GET http://localhost:3333/meals/metrics
